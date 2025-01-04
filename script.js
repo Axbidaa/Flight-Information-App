@@ -5,8 +5,7 @@ $(document).ready(function () {
         $(".search-output").css("align-items", "center");
 
 
-
-        const api_key = '67793da13a45b414acd274ea' // replace this with your api key. The current api key has 15 more requests that can be made.
+        const api_key = 'place_your_API_key_here' // replace this with your api key. The current api key has 15 more requests that can be made.
         // input variables
         var flightString = $(".flight-number").val();
         var flightDate = $(".flight-date").val();
