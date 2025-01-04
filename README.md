@@ -10,7 +10,7 @@ This web application does not require any additional dependencies to be installe
 
 ### API Key
 
-The API key is stored in line 3 of `script.js`. You can head over to https://www.flightapi.io/ to create an account and obtain your API key. Once you receive it, add your API key to this variable.
+The API key is stored in line 3 of `script.js`. Go to https://www.flightapi.io/ to create an account and obtain your API key. Once you receive it, add your API key to this variable.
 
 ## Usage Instructions
 
