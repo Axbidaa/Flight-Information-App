@@ -75,7 +75,10 @@ h1, p, img {
 }
 
 .search-output {
+    display: flex;
+    flex-direction: column;
     flex: 2;
+    justify-content: center;
 }
 
 /* Input fields */
@@ -100,4 +103,38 @@ button {
     object-fit: cover; /* Ensures the image covers the entire div without distortion */
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+.search-output-header {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd; 
+}
+
+.search-output-body {
+    display: flex;
+}
+
+.search-output-arrival {
+    flex: 1;
+}
+
+.search-output-arrival b {
+    color: #939393;
+    font-size: 1.3rem;
+}
+
+.search-output-departure {
+    flex: 1;
+
+}
+
+.search-output-departure b {
+    color: #939393;
+    font-size: 1.3rem;
+}
+
+
+.error-message p{
+    text-align: center;
 }
