@@ -1,10 +1,16 @@
 $(document).ready(function () {
     $(".submit").click(function () {
+        // add a loading screen
+        $(".search-output").html('<div class="loader"></div>');
+        $(".search-output").css("align-items", "center");
+
+
+
         const api_key = '67793da13a45b414acd274ea' // replace this with your api key. The current api key has 15 more requests that can be made.
         // input variables
         var flightString = $(".flight-number").val();
         var flightDate = $(".flight-date").val();
-        var regex = /^([A-Za-z]{2,3})(\d+)$/;
+        var regex = /^([A-Za-z]{1,3})(\d+)$/;
         var match = flightString.match(regex);
         var dateObj = new Date(flightDate);
 
@@ -32,6 +38,9 @@ $(document).ready(function () {
                 date: formattedDate
             },
             success: function (response) {
+                $(".search-output").css("align-items", "");
+
+
                 // display the information obtained from the api
                 var departure = response[0].departure[0];
                 var arrival = response[1].arrival[0];
